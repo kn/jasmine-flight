@@ -10,7 +10,7 @@ Download jasmine-flight.js from [here](https://raw.github.com/kn/jasmine-flight/
 
 Defines a suite of flight component specs. It wraps a Jasmine describe block inside a require statement so that each spec is executed after the component is loaded. The loaded component is available as this.Component.
 
-```
+```js
 describeComponent('app/components/example.js', function() {
   it("loads the component as this.Component", function() {
     expect(this.Component).toBeDefined();
@@ -21,7 +21,7 @@ describeComponent('app/components/example.js', function() {
 ## prepareComponent
  Initializes and instance of the flight component and the node that the component uses. It takes either options for the component or html/jQuery object to be attached to the component as a first argument and component options as a second argument if first argument is not options. The initialized component and node is available as this.component and this.$node, respectively.
 
-```
+```js
 describeComponent('app/components/example.js', function() {
   beforeEach(function() {
     var html = "<div id='container'><a href='#'>link</a></div>";
