@@ -21,3 +21,15 @@ describeComponent('./component.js', function() {
     });
   });
 });
+
+describeMixin('./mixin.js', function() {
+  describe("#describeMixin", function() {
+    it("loads the mixin as this.Mixin", function() {
+      expect(this.Mixin).toBeDefined();
+    });
+
+    it("loads the component as this.Component", function() {
+      expect(this.Component).toBeDefined();
+    });
+  });
+});
