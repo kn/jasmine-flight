@@ -38,7 +38,7 @@ describeComponent('app/components/example.js', function() {
 
 Defines a suite of flight mixin specs. It wraps a Jasmine describe block inside a require statement so that each spec is executed after the mixin is loaded and a component is defined with the mixin. The loaded mixin is available as this.Mixin. The defined component with the mixin is available as this.Component.
 
-```
+```js
 describeMixin('app/mixins/example.js', function() {
   it("loads the mixin as this.Mixin", function() {
     expect(this.Mixin).toBeDefined();
